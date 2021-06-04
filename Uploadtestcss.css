@@ -1,0 +1,325 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:1.5;
+	padding:0;
+	margin:0;
+	background-color:#f4f4f4;
+}
+
+/*Global*/
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+.dark{
+	padding:15px;
+	background:#0f3377;
+	color:#ffffff;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+/*header*/
+header{
+	background:#2da84b;
+	color:#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#ffc300 3px solid;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin: 0;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+
+header .highlight, header .current a{
+	color:#0f3377;
+	font-weight:bold;
+}
+
+header a:hover{
+	opacity:0.7;
+	font-weight:bold;
+}
+
+/*showcase*/
+.showcase{
+	min-height:75px;
+	text-align:center;
+	/*background:url('./Agriculture.jpg') no-repeat;*/
+	font-size:15px;
+	margin:auto;
+	padding-top:5px;
+	max-width:100%;
+}
+
+/*boxes*/ 
+
+#boxes{
+	min-height:600px;
+	margin-top: 25px;
+	color:#ffffff;
+	overflow:hidden;
+}
+
+.box{
+	text-transform: uppercase;
+	background-color:#0f3377;
+	width:auto;
+	margin:1% 7% 3% 8%;
+	padding:6px 10px 15px 7px;
+	text-align:center;
+	overflow:hidden;
+	font-size:12px;
+	color:#ffffff;
+	float:left;
+}
+
+#boxes .box input[type="text"]{
+	margin:0;
+	padding:4px;
+	height:18px;
+	width:300px;
+}	
+
+#boxes .box input[type="file"]{
+	padding:4px;
+	cursor: pointer;
+}
+
+h1#title{
+text-align:center;
+}
+
+.button_1{
+	height:38px;
+	width:150px;
+	border:0;
+	padding-left: 20px;
+	padding-right:20px;
+	margin:10px 0 0 0;
+	background-color:#f4f4f4;
+  	cursor: pointer;
+}
+
+h1#title{
+font-size:20px;
+}
+
+h1#subtitle{
+font-size:16px;
+}
+
+/*sidebar*/
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+/*main-col*/
+article#main-col{
+	float:left;
+	width:65%;
+}
+/*footer*/
+footer{
+	margin-top:50px;
+	padding:20px;
+	background-color:#ffc300;
+	text-align:center;
+}
+
+/*Home page*/
+/*images*/
+
+.slides{
+display:none;
+margin:auto;
+padding-top:100px;
+text-align:center;
+}
+
+/*Log in*/
+.loginbox{
+	text-transform: uppercase;
+	background-color:#0f3377;
+	width:auto;
+	margin:7% 15% 2.7% 34.5%;
+	padding:6px 30px 30px 30px;
+	text-align:center;
+	overflow:hidden;
+	font-size:13px;
+	color:#ffffff;
+	float:left;
+}
+
+.loginbox input[type="text"]{
+	margin:0;
+	padding:auto;
+	height:25px;
+	width:250px;
+}	
+
+.loginbox input[type="password"]{
+	margin:0;
+	padding:auto;
+	height:25px;
+	width:250px;
+}	
+
+/*signinview*/
+/*tables*/
+
+table {
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+table td {
+	transition: all .5s;
+}
+		
+/* Table */
+.data-table {
+	border-collapse: collapse;
+	font-size: 14px;
+	min-width: 537px;
+}
+
+.data-table th, 
+.data-table td {
+	border: 1px solid #e1edff;
+	padding: 7px 17px;
+}
+
+.data-table caption {
+	margin: 7px;
+	font-size:20px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+/* Table Header */
+.data-table thead th {
+	background-color: #0f3377;
+	color: #FFFFFF;
+	border-color: #6ea1cc !important;
+	text-transform: uppercase;
+}
+
+/* Table Body */
+.data-table tbody td a:hover{
+	opacity:0.7;
+	font-weight:bold;
+}
+
+.data-table tbody tr td{
+	background-color: #508abb;
+	text-align:center;
+}
+
+.data-table tbody tr:hover td {
+	background-color: #e5f5ff;
+	border-color:#6ea1cc;
+}
+
+.data-table tbody td:empty{
+	background-color: #ffcccc;
+}
+
+/*view links*/
+
+ul#viewlink{
+	margin:0;
+	padding:15px 0 0 0;	
+}
+
+ul#viewlink li a{
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+	color:#0f3377;
+}
+
+ul#viewlink li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+
+ul#viewlink li .current a{
+	color:#0f3377;
+	font-weight:bold;
+}
+
+ul#viewlink li a:hover{
+	opacity:0.7;
+	font-weight:bold;
+}
+
+/*download*/
+
+a#download{
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+a#download:hover{
+	opacity:0.7;
+	font-weight:bold;
+}
+
+h2#head{
+font-size:20px;
+}
+
+p#desc{
+font-size:17px;
+}
+
+/*upload box*/
+.uploadbox{
+	text-transform: uppercase;
+	background-color:#0f3377;
+	width:auto;
+	margin:4% 15% 2.7% 31.5%;
+	padding:6px 30px 30px 30px;
+	text-align:center;
+	overflow:hidden;
+	font-size:13px;
+	color:#ffffff;
+	float:left;
+}

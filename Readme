@@ -1,0 +1,51 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------Actions to be performed before using the code for implementation-----------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+1.
+To upload the files into a folder make sure the local host is accessible by third party. If not change the web root. See the website for more detailed steps (https://www.digitalocean.com/community/tutorials/how-to-move-an-apache-web-root-to-a-new-location-on-ubuntu-16-04) for the apache server.
+
+2.
+To allow the user to upload files of size more than 2MB(mainly videos) we have to change the inbuilt php settings in the hosting computer by following the procedure below:
+Type this command in the terminal:
+sudo gedit /etc/php/7.0/apache2/php.ini
+In php.ini perform the following changes:
+memory_limit = 800M(change from 2M)
+upload_max_filesize = 800M(change from 2M)
+post_max_size = 800M(change from 2M)
+This enables us to upload large-sized files.
+
+3.
+Change the mysql password and database name according to the hosting computer.
+
+4.
+CREATING THE TABLES:
+
+a)create table Files(FileId int auto_increment not null, FileFormatId int(11) not null, DocumentTypeId int(11) not null, PublicationName varchar(200) not null, PublicationYear varchar(5) not null, Language varchar(15) not null, Description varchar(500) not null, FileName varchar(200) not null, FilePath varchar(200) not null, UploadDate date not null, UserId varchar(50) not null, primary key(FileId));
+
+b)create table DocType(Type varchar(15) not null, Id int not null, primary key(Id));
+
+c)create table FileFormat(Format varchar(15) not null, Id int not null, primary key(Id));
+
+d)create table Login(UserId varchar(50), Password varchar(100), primary key(UserId));
+
+5.
+CREATING FOREIGN KEY CONSTRAINTS:
+
+a)alter table Files add constraint foreign key(FileFormatId) references FileFormat(Id);
+
+b)alter table Files add constraint foreign key(DocumentTypeId) references DocType(Id);
+
+c)alter table Files add constraint foreign key(UserId) references Login(UserId);
+
+6.
+For new users Sign up using the Signuptest.php and then you can sign in using Signintest.php with the same credentials. We have encrypted the password so directly inserting into the database is not possible.If requird you can link the Signuptest.php page to the website.
+
+7.
+There are 2 set of each page i.e,Hometest.php,Signinhome.php,Viewtest.php,Signinview.php,Abouttest.php,Signinabout.php, these pages are required to differentiate the signed in authorised user and the viewer.All the pages are required for the website.Display is common for both the users.
+
+8.
+The permission of the folder uploads, images, videos, pdfs, doc, ppt, text, media, research, project have to be in read and write mode
