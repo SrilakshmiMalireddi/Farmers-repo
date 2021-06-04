@@ -49,3 +49,6 @@ There are 2 set of each page i.e,Hometest.php,Signinhome.php,Viewtest.php,Signin
 
 8.
 The permission of the folder uploads, images, videos, pdfs, doc, ppt, text, media, research, project have to be in read and write mode
+
+9.
+All the media files should be stored in a folder called "Uploads".
